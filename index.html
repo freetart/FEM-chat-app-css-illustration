@@ -3,6 +3,14 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- font awesome -->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+            integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
         <!-- favicon -->
         <link rel="icon" href="./images/favicon/koala.ico" />
         <!-- css -->
@@ -17,7 +25,31 @@
         <!-- showcase -->
         <section class="showcase">
             <!-- phone -->
-            <article class="phone"></article>
+            <article class="phone">
+                <div class="phone__content">
+                    <div class="phone__speaker"></div>
+                    <div class="phone__header">
+                        <div class="phone__contact">
+                            <i class="fas fa-chevron-left phone__icon"></i>
+                            <img
+                                class="phone__avatar"
+                                src="./images/avatar.jpg"
+                                alt="avatar"
+                            />
+                            <div class="phone__contact-info">
+                                <h3 class="phone__contact-name">
+                                    Samuel Green
+                                </h3>
+                                <p class="phone__contact-availability">
+                                    Available to work
+                                </p>
+                            </div>
+                        </div>
+                        <i class="fas fa-ellipsis-v phone__icon"></i>
+                    </div>
+                    <div class="phone__body"></div>
+                </div>
+            </article>
             <!-- info -->
             <article class="info">
                 <h1 class="info__heading heading-styles">Simple Booking</h1>

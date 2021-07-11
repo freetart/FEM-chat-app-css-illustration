@@ -57,7 +57,7 @@ variables
     --light-grayish-violet: hsl(270, 20%, 96%);
     --very-light-magenta: hsl(289, 100%, 72%);
     /* spacing */
-    --max-width: 1200px;
+    --max-width: 1000px;
     --section-spacing: 5rem 0;
     --gap: 5rem;
     /* radius */
@@ -72,8 +72,9 @@ variables
     --lg: 3.5rem;
     --md: 3rem;
     --sm: 2.5rem;
-    --xs: 2rem;
-    --xxs: 1.7rem;
+    --xs: 1.7rem;
+    --xxs: 1.5rem;
+    --xxxs: 1.3rem;
 }
 /*
 =============== 
@@ -187,12 +188,60 @@ showcase
     grid-template-columns: repeat(2, 1fr);
     gap: var(--gap);
     max-width: var(--max-width);
+    align-items: center;
 }
 /*
 =============== 
 phone
 ===============
 */
+.phone {
+    background-color: var(--white);
+    box-shadow: var(--main-shadow);
+    padding: 1rem;
+    max-width: 400px;
+    border-radius: var(--main-radius);
+}
+
+.phone__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: linear-gradient(
+        to right,
+        var(--light-violet),
+        var(--moderate-violet)
+    );
+    border-radius: var(--main-radius);
+    color: var(--white);
+    padding: 1rem;
+}
+
+.phone__contact {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.phone__icon {
+    font-size: var(--xxs);
+}
+
+.phone__contact-name {
+    font-size: var(--xxs);
+}
+
+.phone__contact-availability {
+    font-size: var(--xxxs);
+    color: var(--grayish-blue);
+}
+
+.phone__avatar {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    border: 0.2rem solid var(--white);
+}
 /*
 =============== 
 info
@@ -205,6 +254,6 @@ info
 }
 
 .info__desc {
-    font-size: var(--xxs);
+    font-size: var(--xs);
     color: var(--dark-grayish-violet);
 }
