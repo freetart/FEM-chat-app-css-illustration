@@ -1,0 +1,12 @@
+{
+  "name": "chat-app-css-illustration",
+  "version": "1.0.0",
+  "description": "vanilla css boilerplate for simple projects",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
