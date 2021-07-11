@@ -203,6 +203,10 @@ phone
     border-radius: var(--main-radius);
 }
 
+.phone__content {
+    position: relative;
+}
+
 .phone__header {
     display: flex;
     align-items: center;
@@ -214,7 +218,18 @@ phone
     );
     border-radius: var(--main-radius);
     color: var(--white);
-    padding: 1rem;
+    padding: 3rem 1rem 1rem 1rem;
+}
+
+.phone__speaker {
+    background-color: var(--white);
+    border-radius: var(--main-radius);
+    height: 2.5rem;
+    width: 50%;
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .phone__contact {
