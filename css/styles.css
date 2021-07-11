@@ -3,7 +3,7 @@
 font
 ===============
 */
-@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap");
 
 /*
 ## Colors
@@ -50,7 +50,7 @@ variables
     --grayish-blue: hsl(206, 6%, 79%);
     --very-dark-desaturated-violet: hsl(271, 36%, 24%);
     --dark-grayish-violet: hsl(270, 7%, 64%);
-    /* gradients */ 
+    /* gradients */
     --light-magenta: hsl(270, 7%, 64%);
     --light-violet: hsl(264, 100%, 61%);
     /* secondary */
@@ -73,9 +73,8 @@ variables
     --md: 3rem;
     --sm: 2.5rem;
     --xs: 2rem;
-    --xxs: 1.5rem;
+    --xxs: 1.7rem;
 }
-
 /*
 =============== 
 resets
@@ -95,6 +94,12 @@ html {
 
 body {
     font-family: "Rubik", sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+    position: relative;
 }
 
 img {
@@ -118,7 +123,6 @@ button {
 input {
     font-family: inherit;
 }
-
 /*
 =============== 
 global classes
@@ -140,4 +144,67 @@ global classes
     font-weight: 400;
     letter-spacing: 0.1rem;
     line-height: 1.6;
+}
+/*
+=============== 
+bg patterns
+===============
+*/
+.bg-pattern {
+    position: absolute;
+    z-index: -1;
+}
+
+.bg-pattern--left {
+    clip-path: circle(50% at 0% 0%);
+    background: linear-gradient(
+        to top right,
+        var(--light-violet) 30%,
+        var(--moderate-violet) 70%
+    );
+    height: 100%;
+    width: 100%;
+}
+
+.bg-pattern--right {
+    clip-path: circle(50% at 100% 100%);
+    background: linear-gradient(
+        to top right,
+        var(--light-violet) 30%,
+        var(--moderate-violet) 70%
+    );
+    opacity: 0.1;
+    height: 100%;
+    width: 100%;
+}
+/*
+=============== 
+showcase
+===============
+*/
+.showcase {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--gap);
+    max-width: var(--max-width);
+}
+/*
+=============== 
+phone
+===============
+*/
+/*
+=============== 
+info
+===============
+*/
+.info__heading {
+    font-size: var(--xxl);
+    color: var(--very-dark-desaturated-violet);
+    margin-bottom: 2rem;
+}
+
+.info__desc {
+    font-size: var(--xxs);
+    color: var(--dark-grayish-violet);
 }
