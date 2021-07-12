@@ -2,6 +2,8 @@
 
 chat app css illustration challenge for frontend mentor
 
+site: https://fem-chat-app-css-illustration-challenge.netlify.app/
+
 #### Features
 
 -   pure css phone component
