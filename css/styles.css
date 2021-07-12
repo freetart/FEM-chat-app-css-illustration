@@ -3,42 +3,15 @@
 font
 ===============
 */
+
 @import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap");
-
-/*
-## Colors
-
-### Primary
-
-#### Text
-
-- Pale Violet (sub-heading at the top of the app UI): hsl(276, 100%, 81%)
-- Moderate Violet (chat on the left): hsl(276, 55%, 52%)
-- Desaturated Dark Violet (chat on the right): hsl(271, 15%, 43%)
-- Grayish Blue (placeholder text): hsl(206, 6%, 79%)
-- Very Dark Desaturated Violet (main heading): hsl(271, 36%, 24%)
-- Dark Grayish Violet (paragraph): hsl(270, 7%, 64%)
-
-#### Gradients
-
-These two colors are the vibrant background colors you see throughout the design and are applied as a linear gradient:
-
-- Light Magenta: hsl(293, 100%, 63%)
-- Light Violet: hsl(264, 100%, 61%)
-
-### Secondary
-
-- White: hsl(0, 0%, 100%)
-- Light Grayish Violet (app background): hsl(270, 20%, 96%)
-- Very Dark Desaturated Violet (submit button background): hsl(271, 36%, 24%)
-- Very Light Magenta (radio button outline): hsl(289, 100%, 72%)
-*/
 
 /*
 =============== 
 variables
 ===============
 */
+
 :root {
     /* colors */
     --black: #222;
@@ -76,11 +49,13 @@ variables
     --xxs: 1.5rem;
     --xxxs: 1.3rem;
 }
+
 /*
 =============== 
 resets
 ===============
 */
+
 *,
 *::before,
 *::after {
@@ -125,11 +100,13 @@ button {
 input {
     font-family: inherit;
 }
+
 /*
 =============== 
 global classes
 ===============
 */
+
 .container {
     width: 90vw;
     max-width: var(--max-width);
@@ -147,11 +124,13 @@ global classes
     letter-spacing: 0.1rem;
     line-height: 1.6;
 }
+
 /*
 =============== 
 bg patterns
 ===============
 */
+
 .bg-pattern {
     position: absolute;
     z-index: -1;
@@ -179,11 +158,13 @@ bg patterns
     height: 100%;
     width: 100%;
 }
+
 /*
 =============== 
 showcase
 ===============
 */
+
 .showcase {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -192,11 +173,13 @@ showcase
     align-items: center;
     padding: 10rem 2rem;
 }
+
 /*
 =============== 
 phone
 ===============
 */
+
 .phone {
     background-color: var(--white);
     box-shadow: var(--main-shadow);
@@ -357,11 +340,13 @@ phone
     font-size: var(--xxs);
     color: var(--black);
 }
+
 /*
 =============== 
 info
 ===============
 */
+
 .info__heading {
     font-size: var(--xxl);
     color: var(--very-dark-desaturated-violet);
@@ -372,6 +357,44 @@ info
     font-size: var(--xs);
     color: var(--dark-grayish-violet);
 }
+
+/*
+=============== 
+tag
+===============
+*/
+
+.tag {
+    position: absolute;
+    bottom: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-wrap: wrap;
+    padding: 2rem 2rem 1rem 2rem;
+    margin-top: 5rem;
+}
+
+.tag__heading {
+    font-size: var(--xxs);
+    color: var(--black);
+}
+
+.tag__link {
+    color: var(--moderate-violet);
+    outline: 0;
+}
+
+.tag__link:hover,
+.tag__link:focus {
+    text-decoration: underline;
+}
+
+.tag__logo {
+    width: 5rem;
+}
+
 /*
 =============== 
 media queries
