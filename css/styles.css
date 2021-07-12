@@ -190,6 +190,7 @@ showcase
     gap: var(--gap);
     max-width: var(--max-width);
     align-items: center;
+    padding: 10rem 2rem;
 }
 /*
 =============== 
@@ -370,4 +371,23 @@ info
 .info__desc {
     font-size: var(--xs);
     color: var(--dark-grayish-violet);
+}
+/*
+=============== 
+media queries
+===============
+*/
+
+@media (max-width: 768px) {
+    .showcase {
+        grid-template-columns: 1fr;
+    }
+
+    .phone {
+        margin: 0 auto;
+    }
+
+    .info {
+        text-align: center;
+    }
 }
