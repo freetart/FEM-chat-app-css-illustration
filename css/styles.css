@@ -44,7 +44,7 @@ variables
     --black: #222;
     --white: #fff;
     /* primary */
-    --pale-violet: hsl(276, 100%, 81%);
+    --pale-violet: hsl(276, 100%, 95%);
     --moderate-violet: hsl(276, 55%, 52%);
     --desaturated-dark-violet: hsl(271, 15%, 43%);
     --grayish-blue: hsl(206, 6%, 79%);
@@ -218,7 +218,7 @@ phone
     );
     border-radius: var(--main-radius);
     color: var(--white);
-    padding: 3rem 1rem 1rem 1rem;
+    padding: 2.5rem 1rem 1rem 1rem;
 }
 
 .phone__speaker {
@@ -227,7 +227,7 @@ phone
     height: 2.5rem;
     width: 50%;
     position: absolute;
-    top: 5%;
+    top: 1%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
@@ -257,6 +257,81 @@ phone
     border-radius: 50%;
     border: 0.2rem solid var(--white);
 }
+
+.phone__body {
+    background-color: var(--light-grayish-violet);
+    padding: 1rem;
+    border-radius: var(--main-radius);
+}
+
+.message {
+    padding: 0.5rem 0;
+    width: fit-content;
+    height: fit-content;
+}
+
+.message--received {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.message__text {
+    font-size: var(--xxxs);
+}
+
+.message__text--received {
+    color: var(--moderate-violet);
+    background-color: var(--pale-violet);
+    padding: 1rem;
+    border-radius: var(--main-radius);
+    width: 75%;
+}
+
+.message--sent {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 1rem;
+}
+
+.message__text--sent {
+    color: var(--desaturated-dark-violet);
+    background-color: var(--white);
+    padding: 1rem;
+    border-radius: var(--main-radius);
+    width: 75%;
+}
+
+.message__img {
+    width: 4rem;
+    height: 4rem;
+    border-radius: var(--main-radius);
+}
+
+.message--alert {
+    color: var(--white);
+    padding: 1rem;
+}
+
+.message__text--alert {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: linear-gradient(
+        to right,
+        var(--light-violet),
+        var(--moderate-violet)
+    );
+    padding: 1rem;
+    border-radius: var(--main-radius);
+    width: 75%;
+}
+
+.message__price {
+    font-size: var(--xxs);
+}
+
 /*
 =============== 
 info
