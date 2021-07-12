@@ -412,5 +412,6 @@ media queries
 
     .info {
         text-align: center;
+        margin-bottom: 5rem;
     }
 }
