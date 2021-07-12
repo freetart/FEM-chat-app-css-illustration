@@ -16,6 +16,8 @@
             defer
             src="./node_modules/@fortawesome/fontawesome-free/js/fontawesome.js"
         ></script>
+        <!-- aos -->
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
         <!-- favicon -->
         <link rel="icon" href="./images/favicon/koala.ico" />
         <!-- css -->
@@ -30,7 +32,7 @@
         <!-- showcase -->
         <section class="showcase">
             <!-- phone -->
-            <article class="phone">
+            <article class="phone" data-aos="zoom-out">
                 <div class="phone__content">
                     <div class="phone__speaker"></div>
                     <div class="phone__header">
@@ -166,7 +168,7 @@
                 </div>
             </article>
             <!-- info -->
-            <article class="info">
+            <article class="info" data-aos="zoom-in" data-aos-delay="200">
                 <h1 class="info__heading heading-styles">Simple Booking</h1>
                 <p class="info__desc text-styles">
                     Stay in touch with our dog walkers through the chat
@@ -202,6 +204,11 @@
                 class="tag__logo"
             />
         </article>
+        <!-- aos -->
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+            AOS.init({ offset: 100, duration: 1000, once: true });
+        </script>
         <!-- main js -->
         <script src="./js/script.js"></script>
     </body>

@@ -12,6 +12,7 @@
         "prettier": "2.3.2"
     },
     "dependencies": {
-        "@fortawesome/fontawesome-free": "^5.15.3"
+        "@fortawesome/fontawesome-free": "^5.15.3",
+        "aos": "^2.3.4"
     }
 }
