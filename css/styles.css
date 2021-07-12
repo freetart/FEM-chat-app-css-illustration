@@ -333,6 +333,29 @@ phone
     font-size: var(--xxs);
 }
 
+.phone__footer {
+    width: 100%;
+    position: relative;
+}
+
+.phone__footer-input {
+    width: 100%;
+    padding: 1.1rem;
+    border: 0;
+    outline: 0;
+    border-radius: var(--main-radius);
+    background-color: var(--white);
+    box-shadow: var(--main-shadow);
+    font-size: var(--xxs);
+}
+
+.phone__footer-icon {
+    position: absolute;
+    top: 1.2rem;
+    right: 1rem;
+    font-size: var(--xxs);
+    color: var(--black);
+}
 /*
 =============== 
 info
