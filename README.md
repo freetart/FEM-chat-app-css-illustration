@@ -6,7 +6,7 @@ site: https://fem-chat-app-css-illustration-challenge.netlify.app/
 
 #### Features
 
--   pure css phone component
+-   css phone illustration
 -   animated content
 -   typewriter effect in phone input
 -   responsive design
